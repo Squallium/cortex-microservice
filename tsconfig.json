@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "pretty": true,
+    "sourceMap": true,
+    "target": "es2017",
+    "lib": ["es2017", "dom"],
+    "outDir": ".",
+    "baseUrl": "."
+  },
+  "include": [
+    "base/bin/**/*.ts",
+    "base/controllers/**/*.ts",
+    "base/connections/**/*.ts",
+    "base/errors/**/*.ts",
+    "base/interfaces/**/*.ts",
+    "base/middlewares/**/*.ts",
+    "base/models/**/*.ts",
+    "base/responses/**/*.ts",
+    "base/routes/**/*.ts",
+    "base/schemas/**/*.ts",
+    "base/services/**/*.ts",
+    "base/utils/**/*.ts",
+    "bin/**/*.ts",
+    "routes/**/*.ts",
+    "base/*.ts",
+    "*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
+

@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Local Dev" type="NodeJSConfigurationType" path-to-js-file="base/bin/www.js" working-dir="$PROJECT_DIR$">
+    <envs>
+      <env name="DEBUG" value="base-microservice:*" />
+      <env name="ENV" value="dev" />
+    </envs>
+    <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSStartBrowserRunConfigurationExtension">
+      <browser url="http://localhost:3000/" />
+    </EXTENSION>
+    <method v="2" />
+  </configuration>
+</component>
