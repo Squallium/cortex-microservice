@@ -6,7 +6,7 @@
       <script value="build" />
     </scripts>
     <node-interpreter value="project" />
-    <package-manager value="/usr/local/Cellar/yarn/1.22.10/libexec" />
+    <package-manager value="/usr/local/Cellar/yarn/1.22.11/libexec" />
     <envs />
     <method v="2" />
   </configuration>
