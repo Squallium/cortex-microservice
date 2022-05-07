@@ -3,6 +3,7 @@ import {Express} from "express";
 // import services
 import {MigrationService} from "./base/migration.service";
 // Lazy Begin Imports
+import {ComicConn} from "./connections/comic.conn";
 // Lazy End Imports
 
 export class MicroServiceApp implements IMicroServiceApp {
@@ -15,6 +16,7 @@ export class MicroServiceApp implements IMicroServiceApp {
         // array of promises to be completed before run the application
         return [
             // Lazy Begin Promises
+            ComicConn,
             // Lazy End Promises
         ]
     }
@@ -27,6 +29,7 @@ export class MicroServiceApp implements IMicroServiceApp {
     getAdminBroResources(): any[] {
         return [
             // Lazy Begin Bro
+            ComicConn.model('Publisher'),
             // Lazy End Bro
         ]
     }
