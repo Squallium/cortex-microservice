@@ -1,15 +1,15 @@
 import {Schema} from "mongoose";
 
-export const PublisherSchema = new Schema({
+export const ExampleSchema = new Schema({
     name: {type: String},
 }, {
     timestamps: true,
 });
 
-PublisherSchema.set('toJSON', {
+ExampleSchema.set('toJSON', {
     virtuals: true
 });
 
-PublisherSchema.index({
+ExampleSchema.index({
     name: 1
 }, {unique: true});

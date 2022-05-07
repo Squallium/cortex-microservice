@@ -3,7 +3,7 @@ import {Document} from "mongoose";
 // Lazy End Imports
 
 // Lazy Begin
-export interface IPublisher extends Document {
+export interface IExample extends Document {
     name: string;
 }
 
