@@ -1,5 +1,5 @@
 {
-  "name": "mag-microservice",
+  "name": "cortex-microservice",
   "version": "0.0.0",
   "private": true,
   "scripts": {
