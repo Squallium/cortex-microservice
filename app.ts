@@ -3,6 +3,7 @@ import {Express} from "express";
 // import services
 import {MigrationService} from "./base/migration.service";
 // Lazy Begin Imports
+import {CortexConn} from "./connections/cortex.conn";
 import {ExampleConn} from "./connections/example.conn";
 // Lazy End Imports
 
@@ -16,6 +17,7 @@ export class MicroServiceApp implements IMicroServiceApp {
         // array of promises to be completed before run the application
         return [
             // Lazy Begin Promises
+            CortexConn,
             ExampleConn,
             // Lazy End Promises
         ]
@@ -29,6 +31,7 @@ export class MicroServiceApp implements IMicroServiceApp {
     getAdminBroResources(): any[] {
         return [
             // Lazy Begin Bro
+            CortexConn.model('Story'),
             ExampleConn.model('Example'),
             // Lazy End Bro
         ]
