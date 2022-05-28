@@ -27,6 +27,9 @@
     "bin/**/*.ts",
     "routes/**/*.ts",
     "base/*.ts",
+    "connections/*.ts",
+    "schemas/*.ts",
+    "models/*.ts",
     "*.ts"
   ],
   "exclude": [

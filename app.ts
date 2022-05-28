@@ -32,6 +32,7 @@ export class MicroServiceApp implements IMicroServiceApp {
         return [
             // Lazy Begin Bro
             CortexConn.model('Story'),
+            CortexConn.model('StoryLogEntry'),
             ExampleConn.model('Example'),
             // Lazy End Bro
         ]
